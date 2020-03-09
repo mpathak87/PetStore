@@ -1,0 +1,307 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-04T03:17:35.580Z",
+        "line": 13,
+        "name": "Add a new pet to the store",
+        "description": "",
+        "id": "validating-the-petstore;add-a-new-pet-to-the-store;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3997200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Add a payload with \"11\" \"Rossie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Rossie\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.PetstoreSteps.add_a_payload_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5995600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I call \"/v2/pet\" with POST HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/v2/pet\"",
+                  "offset": 7
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_call_with_POST_HTTP_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I receive valid HTTP status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_receive_valid_HTTP_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify a new pet is created \"11\" \"Rossie\" using \"/v2/pet/11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"Rossie\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"/v2/pet/11\"",
+                  "offset": 50
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_verify_a_new_pet_is_created_using(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-04T03:17:35.823Z",
+        "line": 24,
+        "name": "Remove a pet from the store",
+        "description": "",
+        "id": "validating-the-petstore;remove-a-pet-from-the-store;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "A pet is created \"11\" \"Rossie\" using GET HTTP Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Rossie\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.PetstoreSteps.a_pet_is_created_using_GET_HTTP_Request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I call DELETE HTTP request",
+            "match": {
+              "location": "steps.PetstoreSteps.i_call_DELETE_HTTP_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I receive valid HTTP status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_receive_valid_HTTP_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify pet with \"11\" no longer exist using GET HTTP Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_verify_pet_with_no_longer_exist_using_GET_HTTP_Request(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-04T03:17:35.874Z",
+        "line": 35,
+        "name": "Add new order to buy a pet",
+        "description": "",
+        "id": "validating-the-petstore;add-new-order-to-buy-a-pet;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1999000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Add a payload with \"7\" \"7\" \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"7\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"7\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.PetstoreSteps.add_a_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4997000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I call \"/v2/store/order\" with POST HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/v2/store/order\"",
+                  "offset": 7
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_call_with_POST_HTTP_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I receive valid HTTP status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_receive_valid_HTTP_status_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I verify order with \"7\" \"7\" \"1\" \"placed\" using GET HTTP Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"7\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"7\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"placed\"",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.PetstoreSteps.i_verify_order_with_using_GET_HTTP_Request(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test3"
+          }
+        ]
+      }
+    ],
+    "name": "Validating the petstore",
+    "description": "",
+    "id": "validating-the-petstore",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Petstore.feature",
+    "tags": []
+  }
+]

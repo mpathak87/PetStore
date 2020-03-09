@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="1.188">
+    <testcase classname="Validating the petstore" name="Add a new pet to the store" time="0.221">
+        <system-out>
+            <![CDATA[Given Add a payload with "11" "Rossie"......................................passed
+When I call "/v2/pet" with POST HTTP request................................passed
+Then I receive valid HTTP status code "200".................................passed
+And I verify a new pet is created "11" "Rossie" using "/v2/pet/11"..........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validating the petstore" name="Remove a pet from the store" time="0.012">
+        <system-out>
+            <![CDATA[Given A pet is created "11" "Rossie" using GET HTTP Request.................passed
+When I call DELETE HTTP request.............................................passed
+Then I receive valid HTTP status code "200".................................passed
+And I verify pet with "11" no longer exist using GET HTTP Request...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Validating the petstore" name="Add new order to buy a pet" time="0.018">
+        <system-out>
+            <![CDATA[Given Add a payload with "7" "7" "1"........................................passed
+When I call "/v2/store/order" with POST HTTP request........................passed
+Then I receive valid HTTP status code "200".................................passed
+And I verify order with "7" "7" "1" "placed" using GET HTTP Request.........passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="0" passed="3" skipped="0" total="3">
+    <suite duration-ms="995" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="995" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="Validating the petstore">
+                <test-method duration-ms="14" finished-at="2020-03-04T03:10:45.516875400Z" name="Add a new pet to the store" started-at="2020-03-04T03:10:45.302997200Z" status="PASS"/>
+                <test-method duration-ms="24" finished-at="2020-03-04T03:10:45.581837200Z" name="Remove a pet from the store" started-at="2020-03-04T03:10:45.542860700Z" status="PASS"/>
+                <test-method duration-ms="3" finished-at="2020-03-04T03:10:45.611820800Z" name="Add new order to buy a pet" started-at="2020-03-04T03:10:45.596828600Z" status="PASS"/>
+            </class>
+        </test>
+    </suite>
+</testng-results>
